@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.3/assets/css/docs.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="icon" type="image/png" href="image/titleimg.jpg">
+</head>
+<body onload="getnamee()">
+    <div class="grand">   
+        <nav class="navigation">
+            <div class="logo">   
+               <div><img src="./image/logo.png"></div> 
+                <div><b>Hello!!<span id="name"> </span></b></div>
+            </div>
+           
+            <div class="nav">
+                <a href="home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+            <div class="but">
+                <button type="button" class="btn btn-light" id="signout";>SIGN OUT</button>
+            </div>
+        </nav>
+        <div class="pic-but" id="pic-but">
+            <img src="./image/airplane.jpg" alt="error" id="img1">
+            <button type="button" class="mybtn1" onclick="search1()">Airport Schedule</button>
+            <button type="button" class="mybtn2" onclick="window.location.href='Services.html'";>READ MORE</button>
+        </div>
+        <div class="par" id="par" style="display: none;">
+            <div class="par-child" id="par-child">
+                <div class="child" id="child">
+                    <!-- <div>
+                    <label>Departure Airport</label>
+                    <input type="text" placeholder="Departure Airport (eg. CCU,BBI)" id="dairport" />
+                    </div>
+                    <div>
+                    <label>Departure date(yyyy-mm-dd)</label>
+                    <input type="text" placeholder="Departure Date (yyyy-mm-dd)" id="ddate" />
+                     </div>
+                     <div>
+                    <label>Arrival Airport</label>
+                    <input type="text"  placeholder="Arrival Airport (eg.DEL,BOM) " id="aairport" />
+                    </div>
+                    <div>
+                    <label>Arrival Date(yyyy-mm-dd)</label>
+                    <input type="text" placeholder="Arrival Date (yyyy-mm-dd)" id="adate" />
+                    </div> -->
+
+
+                    <div>
+                        <label>Departure Airport</label>
+                        <select id="dairport">
+                            <option value="">Select Arrival Airport or Write Code (IATA)</option>
+                            <option value="CCU">Kolkata (CCU)</option>
+                            <option value="DEL">Delhi (DEL)</option>
+                            <option value="BBI">Bhubaneshwar (BBI)</option>
+                            <option value="BOM">Mumbai (BOM)</option>
+                            <option value="BLR">Ranchi (IXR)</option>
+                            <option value="BLR">Patna (PTA)</option>
+                            <option value="BLR">Chennai (MAA)</option>
+                            <option value="BLR">Andaman (CBD)</option>
+                        </select>
+                      </div><div>
+                        <label>Departure date (yyyy-mm-dd)</label>
+                        <input type="date" id="ddate" min="2023-16-23" required />
+                      </div>
+                      <div>
+                        <label>Arrival Airport</label>
+                        <select id="aairport">
+                          <option value="">Select Arrival Airport or Write Code (IATA)</option>
+                          <option value="CCU">Kolkata (CCU)</option>
+                          <option value="DEL">Delhi (DEL)</option>
+                          <option value="BBI">Bhubaneshwar (BBI)</option>
+                          <option value="BOM">Mumbai (BOM)</option>
+                          <option value="BLR">Ranchi (IXR)</option>
+                          <option value="BLR">Patna (PTA)</option>
+                          <option value="BLR">Chennai (MAA)</option>
+                          <option value="BLR">Andaman (CBD)</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label>Arrival Date (yyyy-mm-dd)</label>
+                        <input type="date" id="adate" min="2023-16-23" required />
+                      </div>
+                </div>
+                <button id="submit" class="btn_search">SEARCH</button>
+            </div>
+        </div>
+        <!-- <div class="readwrite" id="readwrite">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>SAVE YOUR TIME AND FLY WITH SKYLUX</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div> -->
+        <div id="Schedule_div">
+            <div id="container" class="flex-container"></div>
+        </div>
+        <footer class="foot" id="foot">
+            <div class="last1" id="last1">
+                <p>©Copyright 2023 by skylux.com</p>
+            </div>
+            <div class="last2" id="last2">
+                <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>  
+                <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>   
+                <a href="https://www.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>  
+                <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram" target="_blank"></a>  
+                <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>  
+                <a href="https://www.google.com/" class="fa fa-google" target="_blank"></a>  
+            </div>
+        </footer>
+    </div>
+    <script src="./schedule.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
